@@ -1,0 +1,608 @@
+{
+ "87.9": {
+  "label": "empty",
+  "source": "auto",
+  "needs_review": false,
+  "why": "no pilot, no text, nothing above the floor"
+ },
+ "88.1": {
+  "label": "empty",
+  "source": "auto",
+  "needs_review": false,
+  "why": "no pilot, no text: spill-over from 88.3"
+ },
+ "88.3": {
+  "label": "strong",
+  "source": "you",
+  "needs_review": false,
+  "why": "you listened and decided"
+ },
+ "88.5": {
+  "label": "empty",
+  "source": "auto",
+  "needs_review": false,
+  "why": "no pilot, no text: spill-over from 88.3"
+ },
+ "88.7": {
+  "label": "empty",
+  "source": "auto",
+  "needs_review": false,
+  "why": "no pilot, no text, nothing above the floor"
+ },
+ "88.9": {
+  "label": "empty",
+  "source": "you",
+  "needs_review": false,
+  "why": "you listened and decided"
+ },
+ "89.1": {
+  "label": "empty",
+  "source": "auto",
+  "needs_review": false,
+  "why": "no pilot, no text, nothing above the floor"
+ },
+ "89.3": {
+  "label": "empty",
+  "source": "auto",
+  "needs_review": false,
+  "why": "no pilot, no text, nothing above the floor"
+ },
+ "89.5": {
+  "label": "empty",
+  "source": "auto",
+  "needs_review": false,
+  "why": "no pilot, no text, nothing above the floor"
+ },
+ "89.7": {
+  "label": "empty",
+  "source": "you",
+  "needs_review": false,
+  "why": "you listened and decided"
+ },
+ "89.9": {
+  "label": "strong",
+  "source": "you",
+  "needs_review": false,
+  "why": "you listened and decided"
+ },
+ "90.1": {
+  "label": "empty",
+  "source": "auto",
+  "needs_review": false,
+  "why": "no pilot, no text: spill-over from 89.9"
+ },
+ "90.3": {
+  "label": "empty",
+  "source": "auto",
+  "needs_review": false,
+  "why": "no pilot, no text, nothing above the floor"
+ },
+ "90.5": {
+  "label": "empty",
+  "source": "auto",
+  "needs_review": false,
+  "why": "no pilot, no text: spill-over from 90.7"
+ },
+ "90.7": {
+  "label": "strong",
+  "source": "you",
+  "needs_review": false,
+  "why": "you listened and decided"
+ },
+ "90.9": {
+  "label": "empty",
+  "source": "auto",
+  "needs_review": false,
+  "why": "no pilot, no text: spill-over from 90.7"
+ },
+ "91.1": {
+  "label": "empty",
+  "source": "auto",
+  "needs_review": false,
+  "why": "no pilot, no text, nothing above the floor"
+ },
+ "91.3": {
+  "label": "empty",
+  "source": "auto",
+  "needs_review": false,
+  "why": "no pilot, no text, nothing above the floor"
+ },
+ "91.5": {
+  "label": "empty",
+  "source": "you",
+  "needs_review": false,
+  "why": "you listened and decided"
+ },
+ "91.7": {
+  "label": "empty",
+  "source": "auto",
+  "needs_review": false,
+  "why": "no pilot, no text, nothing above the floor"
+ },
+ "91.9": {
+  "label": "empty",
+  "source": "auto",
+  "needs_review": false,
+  "why": "no pilot, no text, nothing above the floor"
+ },
+ "92.1": {
+  "label": "empty",
+  "source": "auto",
+  "needs_review": false,
+  "why": "no pilot, no text: spill-over from 92.3"
+ },
+ "92.3": {
+  "label": "strong",
+  "source": "you",
+  "needs_review": false,
+  "why": "you listened and decided"
+ },
+ "92.5": {
+  "label": "empty",
+  "source": "auto",
+  "needs_review": false,
+  "why": "no pilot, no text: spill-over from 92.3"
+ },
+ "92.7": {
+  "label": "empty",
+  "source": "auto",
+  "needs_review": false,
+  "why": "no pilot, no text, nothing above the floor"
+ },
+ "92.9": {
+  "label": "empty",
+  "source": "auto",
+  "needs_review": false,
+  "why": "no pilot, no text, nothing above the floor"
+ },
+ "93.1": {
+  "label": "empty",
+  "source": "you",
+  "needs_review": false,
+  "why": "you listened and decided"
+ },
+ "93.3": {
+  "label": "empty",
+  "source": "auto",
+  "needs_review": false,
+  "why": "no pilot, no text, nothing above the floor"
+ },
+ "93.5": {
+  "label": "empty",
+  "source": "auto",
+  "needs_review": false,
+  "why": "no pilot, no text, nothing above the floor"
+ },
+ "93.7": {
+  "label": "empty",
+  "source": "auto",
+  "needs_review": false,
+  "why": "no pilot, no text, nothing above the floor"
+ },
+ "93.9": {
+  "label": "empty",
+  "source": "auto",
+  "needs_review": false,
+  "why": "no pilot, no text, nothing above the floor"
+ },
+ "94.1": {
+  "label": "empty",
+  "source": "auto",
+  "needs_review": false,
+  "why": "no pilot, no text, nothing above the floor"
+ },
+ "94.3": {
+  "label": "empty",
+  "source": "you",
+  "needs_review": false,
+  "why": "you listened and decided"
+ },
+ "94.5": {
+  "label": "weak",
+  "source": "you",
+  "needs_review": false,
+  "why": "you listened and decided"
+ },
+ "94.7": {
+  "label": "empty",
+  "source": "auto",
+  "needs_review": false,
+  "why": "no pilot, no text, nothing above the floor"
+ },
+ "94.9": {
+  "label": "empty",
+  "source": "auto",
+  "needs_review": false,
+  "why": "no pilot, no text, nothing above the floor"
+ },
+ "95.1": {
+  "label": "empty",
+  "source": "auto",
+  "needs_review": false,
+  "why": "no pilot, no text, nothing above the floor"
+ },
+ "95.3": {
+  "label": "empty",
+  "source": "you",
+  "needs_review": false,
+  "why": "you listened and decided"
+ },
+ "95.5": {
+  "label": "empty",
+  "source": "auto",
+  "needs_review": false,
+  "why": "no pilot, no text, nothing above the floor"
+ },
+ "95.7": {
+  "label": "empty",
+  "source": "you",
+  "needs_review": false,
+  "why": "you listened and decided"
+ },
+ "95.9": {
+  "label": "empty",
+  "source": "auto",
+  "needs_review": false,
+  "why": "no pilot, no text, nothing above the floor"
+ },
+ "96.1": {
+  "label": "empty",
+  "source": "auto",
+  "needs_review": false,
+  "why": "no pilot, no text, nothing above the floor"
+ },
+ "96.3": {
+  "label": "empty",
+  "source": "auto",
+  "needs_review": false,
+  "why": "no pilot, no text: spill-over from 96.5"
+ },
+ "96.5": {
+  "label": "strong",
+  "source": "you",
+  "needs_review": false,
+  "why": "you listened and decided"
+ },
+ "96.7": {
+  "label": "empty",
+  "source": "auto",
+  "needs_review": false,
+  "why": "no pilot, no text, nothing above the floor"
+ },
+ "96.9": {
+  "label": "empty",
+  "source": "you",
+  "needs_review": false,
+  "why": "you listened and decided"
+ },
+ "97.1": {
+  "label": "empty",
+  "source": "auto",
+  "needs_review": false,
+  "why": "no pilot, no text, nothing above the floor"
+ },
+ "97.3": {
+  "label": "empty",
+  "source": "auto",
+  "needs_review": false,
+  "why": "no pilot, no text, nothing above the floor"
+ },
+ "97.5": {
+  "label": "empty",
+  "source": "you",
+  "needs_review": false,
+  "why": "you listened and decided"
+ },
+ "97.7": {
+  "label": "empty",
+  "source": "auto",
+  "needs_review": false,
+  "why": "no pilot, no text, nothing above the floor"
+ },
+ "97.9": {
+  "label": "empty",
+  "source": "auto",
+  "needs_review": false,
+  "why": "no pilot, no text, nothing above the floor"
+ },
+ "98.1": {
+  "label": "strong",
+  "source": "you",
+  "needs_review": false,
+  "why": "you listened and decided"
+ },
+ "98.3": {
+  "label": "empty",
+  "source": "auto",
+  "needs_review": false,
+  "why": "no pilot, no text, nothing above the floor"
+ },
+ "98.5": {
+  "label": "empty",
+  "source": "you",
+  "needs_review": false,
+  "why": "you listened and decided"
+ },
+ "98.7": {
+  "label": "empty",
+  "source": "auto",
+  "needs_review": false,
+  "why": "no pilot, no text, nothing above the floor"
+ },
+ "98.9": {
+  "label": "weak",
+  "source": "you",
+  "needs_review": false,
+  "why": "you listened and decided"
+ },
+ "99.1": {
+  "label": "empty",
+  "source": "you",
+  "needs_review": false,
+  "why": "you listened and decided"
+ },
+ "99.3": {
+  "label": "empty",
+  "source": "you",
+  "needs_review": false,
+  "why": "you listened and decided"
+ },
+ "99.5": {
+  "label": "empty",
+  "source": "auto",
+  "needs_review": false,
+  "why": "no pilot, no text, nothing above the floor"
+ },
+ "99.7": {
+  "label": "empty",
+  "source": "auto",
+  "needs_review": false,
+  "why": "no pilot, no text, nothing above the floor"
+ },
+ "99.9": {
+  "label": "empty",
+  "source": "auto",
+  "needs_review": false,
+  "why": "no pilot, no text, nothing above the floor"
+ },
+ "100.1": {
+  "label": "empty",
+  "source": "auto",
+  "needs_review": false,
+  "why": "no pilot, no text, nothing above the floor"
+ },
+ "100.3": {
+  "label": "strong",
+  "source": "you",
+  "needs_review": false,
+  "why": "you listened and decided"
+ },
+ "100.5": {
+  "label": "empty",
+  "source": "auto",
+  "needs_review": false,
+  "why": "no pilot, no text, nothing above the floor"
+ },
+ "100.7": {
+  "label": "empty",
+  "source": "auto",
+  "needs_review": false,
+  "why": "no pilot, no text, nothing above the floor"
+ },
+ "100.9": {
+  "label": "empty",
+  "source": "auto",
+  "needs_review": false,
+  "why": "no pilot, no text: spill-over from 101.1"
+ },
+ "101.1": {
+  "label": "strong",
+  "source": "you",
+  "needs_review": false,
+  "why": "you listened and decided"
+ },
+ "101.3": {
+  "label": "empty",
+  "source": "auto",
+  "needs_review": false,
+  "why": "no pilot, no text: spill-over from 101.1"
+ },
+ "101.5": {
+  "label": "empty",
+  "source": "auto",
+  "needs_review": false,
+  "why": "no pilot, no text, nothing above the floor"
+ },
+ "101.7": {
+  "label": "empty",
+  "source": "auto",
+  "needs_review": false,
+  "why": "no pilot, no text, nothing above the floor"
+ },
+ "101.9": {
+  "label": "strong",
+  "source": "you",
+  "needs_review": false,
+  "why": "you listened and decided"
+ },
+ "102.1": {
+  "label": "empty",
+  "source": "auto",
+  "needs_review": false,
+  "why": "no pilot, no text, nothing above the floor"
+ },
+ "102.3": {
+  "label": "empty",
+  "source": "auto",
+  "needs_review": false,
+  "why": "no pilot, no text, nothing above the floor"
+ },
+ "102.5": {
+  "label": "empty",
+  "source": "auto",
+  "needs_review": false,
+  "why": "no pilot, no text, nothing above the floor"
+ },
+ "102.7": {
+  "label": "empty",
+  "source": "you",
+  "needs_review": false,
+  "why": "you listened and decided"
+ },
+ "102.9": {
+  "label": "empty",
+  "source": "auto",
+  "needs_review": false,
+  "why": "no pilot, no text, nothing above the floor"
+ },
+ "103.1": {
+  "label": "weak",
+  "source": "you",
+  "needs_review": false,
+  "why": "you listened and decided"
+ },
+ "103.3": {
+  "label": "empty",
+  "source": "auto",
+  "needs_review": false,
+  "why": "no pilot, no text, nothing above the floor"
+ },
+ "103.5": {
+  "label": "empty",
+  "source": "auto",
+  "needs_review": false,
+  "why": "no pilot, no text, nothing above the floor"
+ },
+ "103.7": {
+  "label": "empty",
+  "source": "auto",
+  "needs_review": false,
+  "why": "no pilot, no text, nothing above the floor"
+ },
+ "103.9": {
+  "label": "empty",
+  "source": "auto",
+  "needs_review": false,
+  "why": "no pilot, no text: spill-over from 104.1"
+ },
+ "104.1": {
+  "label": "strong",
+  "source": "you",
+  "needs_review": false,
+  "why": "you listened and decided"
+ },
+ "104.3": {
+  "label": "empty",
+  "source": "auto",
+  "needs_review": false,
+  "why": "no pilot, no text, nothing above the floor"
+ },
+ "104.5": {
+  "label": "empty",
+  "source": "auto",
+  "needs_review": false,
+  "why": "no pilot, no text, nothing above the floor"
+ },
+ "104.7": {
+  "label": "empty",
+  "source": "auto",
+  "needs_review": false,
+  "why": "no pilot, no text, nothing above the floor"
+ },
+ "104.9": {
+  "label": "empty",
+  "source": "auto",
+  "needs_review": false,
+  "why": "no pilot, no text: spill-over from 105.1"
+ },
+ "105.1": {
+  "label": "strong",
+  "source": "you",
+  "needs_review": false,
+  "why": "you listened and decided"
+ },
+ "105.3": {
+  "label": "empty",
+  "source": "auto",
+  "needs_review": false,
+  "why": "no pilot, no text: spill-over from 105.1"
+ },
+ "105.5": {
+  "label": "empty",
+  "source": "auto",
+  "needs_review": false,
+  "why": "no pilot, no text, nothing above the floor"
+ },
+ "105.7": {
+  "label": "empty",
+  "source": "auto",
+  "needs_review": false,
+  "why": "no pilot, no text, nothing above the floor"
+ },
+ "105.9": {
+  "label": "weak",
+  "source": "you",
+  "needs_review": false,
+  "why": "you listened and decided"
+ },
+ "106.1": {
+  "label": "empty",
+  "source": "auto",
+  "needs_review": false,
+  "why": "no pilot, no text, nothing above the floor"
+ },
+ "106.3": {
+  "label": "empty",
+  "source": "you",
+  "needs_review": false,
+  "why": "you listened and decided"
+ },
+ "106.5": {
+  "label": "empty",
+  "source": "auto",
+  "needs_review": false,
+  "why": "no pilot, no text, nothing above the floor"
+ },
+ "106.7": {
+  "label": "weak",
+  "source": "you",
+  "needs_review": false,
+  "why": "you listened and decided"
+ },
+ "106.9": {
+  "label": "empty",
+  "source": "auto",
+  "needs_review": false,
+  "why": "no pilot, no text, nothing above the floor"
+ },
+ "107.1": {
+  "label": "empty",
+  "source": "you",
+  "needs_review": false,
+  "why": "you listened and decided"
+ },
+ "107.3": {
+  "label": "empty",
+  "source": "auto",
+  "needs_review": false,
+  "why": "no pilot, no text, nothing above the floor"
+ },
+ "107.5": {
+  "label": "empty",
+  "source": "you",
+  "needs_review": false,
+  "why": "you listened and decided"
+ },
+ "107.7": {
+  "label": "strong",
+  "source": "you",
+  "needs_review": false,
+  "why": "you listened and decided"
+ },
+ "107.9": {
+  "label": "empty",
+  "source": "auto",
+  "needs_review": false,
+  "why": "no pilot, no text, nothing above the floor"
+ }
+}

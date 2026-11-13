@@ -1,0 +1,1433 @@
+[
+ {
+  "freq": 88.3,
+  "call": "WPOZ",
+  "city": "Orlando",
+  "state": "FL",
+  "service": "FM",
+  "erp_kw": 100.0,
+  "km": 10.43
+ },
+ {
+  "freq": 88.7,
+  "call": "WMYZ",
+  "city": "The Villages",
+  "state": "FL",
+  "service": "FM",
+  "erp_kw": 35.0,
+  "km": 81.42
+ },
+ {
+  "freq": 88.9,
+  "call": "WKTO",
+  "city": "Edgewater",
+  "state": "FL",
+  "service": "FM",
+  "erp_kw": 25.0,
+  "km": 47.13
+ },
+ {
+  "freq": 89.1,
+  "call": "WLAZ",
+  "city": "Kissimmee",
+  "state": "FL",
+  "service": "FM",
+  "erp_kw": 0.0,
+  "km": 48.13
+ },
+ {
+  "freq": 89.3,
+  "call": "WPIO",
+  "city": "Titusville",
+  "state": "FL",
+  "service": "FM",
+  "erp_kw": 4.5,
+  "km": 34.41
+ },
+ {
+  "freq": 89.3,
+  "call": "WKFA",
+  "city": "St. Catherine",
+  "state": "FL",
+  "service": "FM",
+  "erp_kw": 0.0,
+  "km": 86.36
+ },
+ {
+  "freq": 89.5,
+  "call": "WFIT",
+  "city": "Melbourne",
+  "state": "FL",
+  "service": "FM",
+  "erp_kw": 4.7,
+  "km": 82.17
+ },
+ {
+  "freq": 89.5,
+  "call": "WMFV",
+  "city": "Cedar Creek",
+  "state": "FL",
+  "service": "FM",
+  "erp_kw": 22.0,
+  "km": 92.91
+ },
+ {
+  "freq": 89.7,
+  "call": "WJLU",
+  "city": "New Smyrna Beach",
+  "state": "FL",
+  "service": "FM",
+  "erp_kw": 10.0,
+  "km": 50.18
+ },
+ {
+  "freq": 89.7,
+  "call": "WRRJ",
+  "city": "Cocoa Beach",
+  "state": "FL",
+  "service": "FM",
+  "erp_kw": 0.175,
+  "km": 62.87
+ },
+ {
+  "freq": 89.9,
+  "call": "WUCF-FM",
+  "city": "Orlando",
+  "state": "FL",
+  "service": "FM",
+  "erp_kw": 0.36,
+  "km": 1.37
+ },
+ {
+  "freq": 90.3,
+  "call": "WIGW",
+  "city": "Eustis",
+  "state": "FL",
+  "service": "FM",
+  "erp_kw": 9.4,
+  "km": 68.02
+ },
+ {
+  "freq": 90.3,
+  "call": "WLVF-FM",
+  "city": "Haines City",
+  "state": "FL",
+  "service": "FM",
+  "erp_kw": 0.75,
+  "km": 68.19
+ },
+ {
+  "freq": 90.3,
+  "call": "WEJF",
+  "city": "Palm Bay",
+  "state": "FL",
+  "service": "FM",
+  "erp_kw": 0.3,
+  "km": 80.18
+ },
+ {
+  "freq": 90.3,
+  "call": "WJLH",
+  "city": "Flagler Beach",
+  "state": "FL",
+  "service": "FM",
+  "erp_kw": 15.0,
+  "km": 85.54
+ },
+ {
+  "freq": 90.7,
+  "call": "WMFE-FM",
+  "city": "Orlando",
+  "state": "FL",
+  "service": "FM",
+  "erp_kw": 100.0,
+  "km": 10.43
+ },
+ {
+  "freq": 91.1,
+  "call": "WHYZ",
+  "city": "Palm Coast",
+  "state": "FL",
+  "service": "FM",
+  "erp_kw": 9.2,
+  "km": 92.46
+ },
+ {
+  "freq": 91.5,
+  "call": "WPRK",
+  "city": "Winter Park",
+  "state": "FL",
+  "service": "FM",
+  "erp_kw": 0.9,
+  "km": 16.61
+ },
+ {
+  "freq": 91.5,
+  "call": "WMIE-FM",
+  "city": "Cocoa",
+  "state": "FL",
+  "service": "FM",
+  "erp_kw": 20.0,
+  "km": 52.16
+ },
+ {
+  "freq": 91.5,
+  "call": "WGTT",
+  "city": "Emeralda",
+  "state": "FL",
+  "service": "FM",
+  "erp_kw": 1.1,
+  "km": 69.55
+ },
+ {
+  "freq": 91.5,
+  "call": "WAPN",
+  "city": "Holly Hill",
+  "state": "FL",
+  "service": "FM",
+  "erp_kw": 1.8,
+  "km": 73.49
+ },
+ {
+  "freq": 91.7,
+  "call": "WDOZ",
+  "city": "Pierson",
+  "state": "FL",
+  "service": "FM",
+  "erp_kw": 5.0,
+  "km": 98.54
+ },
+ {
+  "freq": 92.3,
+  "call": "WWKA",
+  "city": "Orlando",
+  "state": "FL",
+  "service": "FM",
+  "erp_kw": 100.0,
+  "km": 14.74
+ },
+ {
+  "freq": 92.7,
+  "call": "WRXW-LP",
+  "city": "Winter Park",
+  "state": "FL",
+  "service": "FL",
+  "erp_kw": 0.027,
+  "km": 15.95
+ },
+ {
+  "freq": 92.7,
+  "call": "W224DY",
+  "city": "Bithlo",
+  "state": "FL",
+  "service": "FX",
+  "erp_kw": 0.003,
+  "km": 24.82
+ },
+ {
+  "freq": 92.7,
+  "call": "WURB-LP",
+  "city": "Kissimmee",
+  "state": "FL",
+  "service": "FL",
+  "erp_kw": 0.028,
+  "km": 34.5
+ },
+ {
+  "freq": 92.7,
+  "call": "W224CQ",
+  "city": "Winter Garden",
+  "state": "FL",
+  "service": "FX",
+  "erp_kw": 0.027,
+  "km": 39.52
+ },
+ {
+  "freq": 92.7,
+  "call": "W224DJ",
+  "city": "Melbourne",
+  "state": "FL",
+  "service": "FX",
+  "erp_kw": 0.25,
+  "km": 70.94
+ },
+ {
+  "freq": 92.7,
+  "call": "WFPF-LP",
+  "city": "Frostproof",
+  "state": "FL",
+  "service": "FL",
+  "erp_kw": 0.1,
+  "km": 99.46
+ },
+ {
+  "freq": 92.9,
+  "call": "WGRL-LP",
+  "city": "Saint Cloud",
+  "state": "FL",
+  "service": "FL",
+  "erp_kw": 0.039,
+  "km": 41.33
+ },
+ {
+  "freq": 92.9,
+  "call": "WZAY-LP",
+  "city": "Rockledge",
+  "state": "FL",
+  "service": "FL",
+  "erp_kw": 0.1,
+  "km": 54.79
+ },
+ {
+  "freq": 93.1,
+  "call": "W226BT",
+  "city": "Orlando",
+  "state": "FL",
+  "service": "FX",
+  "erp_kw": 0.25,
+  "km": 18.85
+ },
+ {
+  "freq": 93.1,
+  "call": "WKRO-FM",
+  "city": "Port Orange",
+  "state": "FL",
+  "service": "FM",
+  "erp_kw": 24.5,
+  "km": 64.34
+ },
+ {
+  "freq": 93.3,
+  "call": "W227CP",
+  "city": "Sanford",
+  "state": "FL",
+  "service": "FX",
+  "erp_kw": 0.25,
+  "km": 19.37
+ },
+ {
+  "freq": 93.3,
+  "call": "W227AF",
+  "city": "Melbourne",
+  "state": "FL",
+  "service": "FX",
+  "erp_kw": 0.0,
+  "km": 70.93
+ },
+ {
+  "freq": 93.5,
+  "call": "W228BK",
+  "city": "Union Park",
+  "state": "FL",
+  "service": "FX",
+  "erp_kw": 0.038,
+  "km": 4.85
+ },
+ {
+  "freq": 93.5,
+  "call": "W228DF",
+  "city": "Orlando",
+  "state": "FL",
+  "service": "FX",
+  "erp_kw": 0.018,
+  "km": 21.76
+ },
+ {
+  "freq": 93.5,
+  "call": "WRDJ-LP",
+  "city": "Merritt Island",
+  "state": "FL",
+  "service": "FL",
+  "erp_kw": 0.02,
+  "km": 51.07
+ },
+ {
+  "freq": 93.5,
+  "call": "W228CT",
+  "city": "Daytona Beach",
+  "state": "FL",
+  "service": "FX",
+  "erp_kw": 0.245,
+  "km": 71.37
+ },
+ {
+  "freq": 93.7,
+  "call": "WSVJ-LP",
+  "city": "Titusville",
+  "state": "FL",
+  "service": "FL",
+  "erp_kw": 0.1,
+  "km": 39.69
+ },
+ {
+  "freq": 93.7,
+  "call": "WSEU-LP",
+  "city": "Lakeland",
+  "state": "FL",
+  "service": "FL",
+  "erp_kw": 0.1,
+  "km": 95.1
+ },
+ {
+  "freq": 93.9,
+  "call": "W230AL",
+  "city": "Union Park",
+  "state": "FL",
+  "service": "FX",
+  "erp_kw": 0.175,
+  "km": 25.58
+ },
+ {
+  "freq": 93.9,
+  "call": "WLGM-LP",
+  "city": "Edgewater",
+  "state": "FL",
+  "service": "FL",
+  "erp_kw": 0.1,
+  "km": 49.34
+ },
+ {
+  "freq": 94.1,
+  "call": "W231CT",
+  "city": "Orlando",
+  "state": "FL",
+  "service": "FX",
+  "erp_kw": 0.25,
+  "km": 17.46
+ },
+ {
+  "freq": 94.1,
+  "call": "WUOK-LP",
+  "city": "Bassville Park",
+  "state": "FL",
+  "service": "FL",
+  "erp_kw": 0.049,
+  "km": 61.06
+ },
+ {
+  "freq": 94.1,
+  "call": "W231CN",
+  "city": "Daytona Beach",
+  "state": "FL",
+  "service": "FX",
+  "erp_kw": 0.25,
+  "km": 71.37
+ },
+ {
+  "freq": 94.3,
+  "call": "W232AZ",
+  "city": "Melbourne",
+  "state": "FL",
+  "service": "FX",
+  "erp_kw": 0.12,
+  "km": 83.96
+ },
+ {
+  "freq": 94.5,
+  "call": "WCFB",
+  "city": "Daytona Beach",
+  "state": "FL",
+  "service": "FM",
+  "erp_kw": 100.0,
+  "km": 48.7
+ },
+ {
+  "freq": 94.7,
+  "call": "W234BI",
+  "city": "Cocoa",
+  "state": "FL",
+  "service": "FX",
+  "erp_kw": 0.125,
+  "km": 60.68
+ },
+ {
+  "freq": 94.9,
+  "call": "W235CR",
+  "city": "Orlando",
+  "state": "FL",
+  "service": "FX",
+  "erp_kw": 0.225,
+  "km": 21.31
+ },
+ {
+  "freq": 95.1,
+  "call": "W236DN",
+  "city": "Leesburg",
+  "state": "FL",
+  "service": "FX",
+  "erp_kw": 0.25,
+  "km": 70.45
+ },
+ {
+  "freq": 95.1,
+  "call": "WFKS",
+  "city": "Melbourne",
+  "state": "FL",
+  "service": "FM",
+  "erp_kw": 4.3,
+  "km": 70.93
+ },
+ {
+  "freq": 95.1,
+  "call": "W236DY",
+  "city": "Daytona Beach",
+  "state": "FL",
+  "service": "FX",
+  "erp_kw": 0.25,
+  "km": 71.61
+ },
+ {
+  "freq": 95.3,
+  "call": "WPYO",
+  "city": "Maitland",
+  "state": "FL",
+  "service": "FM",
+  "erp_kw": 12.0,
+  "km": 25.87
+ },
+ {
+  "freq": 95.3,
+  "call": "W237FO",
+  "city": "Lakeland",
+  "state": "FL",
+  "service": "FX",
+  "erp_kw": 0.055,
+  "km": 97.43
+ },
+ {
+  "freq": 95.5,
+  "call": "W238AM",
+  "city": "Titusville",
+  "state": "FL",
+  "service": "FX",
+  "erp_kw": 0.1,
+  "km": 38.13
+ },
+ {
+  "freq": 95.5,
+  "call": "WCPL-LP",
+  "city": "Merritt Island",
+  "state": "FL",
+  "service": "FL",
+  "erp_kw": 0.1,
+  "km": 55.89
+ },
+ {
+  "freq": 95.5,
+  "call": "W238CV",
+  "city": "Auburndale",
+  "state": "FL",
+  "service": "FX",
+  "erp_kw": 0.25,
+  "km": 68.21
+ },
+ {
+  "freq": 95.7,
+  "call": "WLPM-LP",
+  "city": "Christmas",
+  "state": "FL",
+  "service": "FL",
+  "erp_kw": 0.1,
+  "km": 9.79
+ },
+ {
+  "freq": 95.7,
+  "call": "WNKQ-LP",
+  "city": "Kissimmee",
+  "state": "FL",
+  "service": "FL",
+  "erp_kw": 0.022,
+  "km": 31.84
+ },
+ {
+  "freq": 95.7,
+  "call": "WHOG-FM",
+  "city": "Ormond-By-The-Sea",
+  "state": "FL",
+  "service": "FM",
+  "erp_kw": 48.0,
+  "km": 71.37
+ },
+ {
+  "freq": 95.9,
+  "call": "W240BV",
+  "city": "Orlando",
+  "state": "FL",
+  "service": "FX",
+  "erp_kw": 0.099,
+  "km": 21.31
+ },
+ {
+  "freq": 95.9,
+  "call": "WTLE-LP",
+  "city": "Leesburg",
+  "state": "FL",
+  "service": "FL",
+  "erp_kw": 0.1,
+  "km": 70.08
+ },
+ {
+  "freq": 95.9,
+  "call": "W240DB",
+  "city": "Auburndale",
+  "state": "FL",
+  "service": "FX",
+  "erp_kw": 0.22,
+  "km": 84.5
+ },
+ {
+  "freq": 96.1,
+  "call": "WWID-LP",
+  "city": "Orlando",
+  "state": "FL",
+  "service": "FL",
+  "erp_kw": 0.1,
+  "km": 6.39
+ },
+ {
+  "freq": 96.1,
+  "call": "W241BP",
+  "city": "Kissimmee",
+  "state": "FL",
+  "service": "FX",
+  "erp_kw": 0.019,
+  "km": 31.85
+ },
+ {
+  "freq": 96.1,
+  "call": "W241CZ",
+  "city": "Deland",
+  "state": "FL",
+  "service": "FX",
+  "erp_kw": 0.25,
+  "km": 42.49
+ },
+ {
+  "freq": 96.1,
+  "call": "W241CR",
+  "city": "Clermont",
+  "state": "FL",
+  "service": "FX",
+  "erp_kw": 0.099,
+  "km": 49.45
+ },
+ {
+  "freq": 96.3,
+  "call": "W242AK",
+  "city": "Lakeland",
+  "state": "FL",
+  "service": "FX",
+  "erp_kw": 0.18,
+  "km": 93.44
+ },
+ {
+  "freq": 96.5,
+  "call": "WOEX",
+  "city": "Orlando",
+  "state": "FL",
+  "service": "FM",
+  "erp_kw": 100.0,
+  "km": 14.74
+ },
+ {
+  "freq": 96.9,
+  "call": "W245CL",
+  "city": "Deltona",
+  "state": "FL",
+  "service": "FX",
+  "erp_kw": 0.25,
+  "km": 25.11
+ },
+ {
+  "freq": 96.9,
+  "call": "W245DF",
+  "city": "New Smynra Beach",
+  "state": "FL",
+  "service": "FX",
+  "erp_kw": 0.25,
+  "km": 50.14
+ },
+ {
+  "freq": 96.9,
+  "call": "WRRQ-LP",
+  "city": "Cocoa",
+  "state": "FL",
+  "service": "FL",
+  "erp_kw": 0.063,
+  "km": 52.16
+ },
+ {
+  "freq": 96.9,
+  "call": "W245AZ",
+  "city": "The Villages",
+  "state": "FL",
+  "service": "FX",
+  "erp_kw": 0.25,
+  "km": 74.8
+ },
+ {
+  "freq": 96.9,
+  "call": "W245DO",
+  "city": "Lake Wales",
+  "state": "FL",
+  "service": "FX",
+  "erp_kw": 0.25,
+  "km": 84.84
+ },
+ {
+  "freq": 97.1,
+  "call": "W246CK",
+  "city": "Kissimmee",
+  "state": "FL",
+  "service": "FX",
+  "erp_kw": 0.25,
+  "km": 31.84
+ },
+ {
+  "freq": 97.1,
+  "call": "WJVE-LP",
+  "city": "Debary",
+  "state": "FL",
+  "service": "FL",
+  "erp_kw": 0.094,
+  "km": 33.12
+ },
+ {
+  "freq": 97.1,
+  "call": "W246BT",
+  "city": "Clermont",
+  "state": "FL",
+  "service": "FX",
+  "erp_kw": 0.027,
+  "km": 39.52
+ },
+ {
+  "freq": 97.1,
+  "call": "WVGT-LP",
+  "city": "Mount Dora",
+  "state": "FL",
+  "service": "FL",
+  "erp_kw": 0.1,
+  "km": 47.62
+ },
+ {
+  "freq": 97.1,
+  "call": "W246DX",
+  "city": "Winter Haven",
+  "state": "FL",
+  "service": "FX",
+  "erp_kw": 0.2,
+  "km": 83.62
+ },
+ {
+  "freq": 97.3,
+  "call": "W247AK",
+  "city": "Deland",
+  "state": "FL",
+  "service": "FX",
+  "erp_kw": 0.1,
+  "km": 47.84
+ },
+ {
+  "freq": 97.3,
+  "call": "W247AL",
+  "city": "Daytona Beach",
+  "state": "FL",
+  "service": "FX",
+  "erp_kw": 0.12,
+  "km": 71.1
+ },
+ {
+  "freq": 97.3,
+  "call": "WQFB-LP",
+  "city": "Flagler Beach",
+  "state": "FL",
+  "service": "FL",
+  "erp_kw": 0.031,
+  "km": 99.24
+ },
+ {
+  "freq": 97.5,
+  "call": "WPCV",
+  "city": "Winter Haven",
+  "state": "FL",
+  "service": "FM",
+  "erp_kw": 100.0,
+  "km": 62.94
+ },
+ {
+  "freq": 97.7,
+  "call": "W249EH",
+  "city": "Daytona Beach",
+  "state": "FL",
+  "service": "FX",
+  "erp_kw": 0.23,
+  "km": 60.43
+ },
+ {
+  "freq": 97.7,
+  "call": "WMCW-LP",
+  "city": "Astor",
+  "state": "FL",
+  "service": "FL",
+  "erp_kw": 0.1,
+  "km": 71.41
+ },
+ {
+  "freq": 97.7,
+  "call": "WPAV-LP",
+  "city": "Belleview",
+  "state": "FL",
+  "service": "FL",
+  "erp_kw": 0.068,
+  "km": 93.29
+ },
+ {
+  "freq": 97.9,
+  "call": "W250CE",
+  "city": "Kissimmee",
+  "state": "FL",
+  "service": "FX",
+  "erp_kw": 0.25,
+  "km": 31.85
+ },
+ {
+  "freq": 97.9,
+  "call": "W250BH",
+  "city": "Melbourne",
+  "state": "FL",
+  "service": "FX",
+  "erp_kw": 0.25,
+  "km": 80.18
+ },
+ {
+  "freq": 98.1,
+  "call": "WNUE-FM",
+  "city": "Deltona",
+  "state": "FL",
+  "service": "FM",
+  "erp_kw": 50.0,
+  "km": 30.62
+ },
+ {
+  "freq": 98.5,
+  "call": "WHPB-LP",
+  "city": "Orlando",
+  "state": "FL",
+  "service": "FL",
+  "erp_kw": 0.018,
+  "km": 25.87
+ },
+ {
+  "freq": 98.5,
+  "call": "W253AG",
+  "city": "Cocoa",
+  "state": "FL",
+  "service": "FX",
+  "erp_kw": 0.17,
+  "km": 56.39
+ },
+ {
+  "freq": 98.5,
+  "call": "W253DI",
+  "city": "Daytona Beach",
+  "state": "FL",
+  "service": "FX",
+  "erp_kw": 0.25,
+  "km": 63.44
+ },
+ {
+  "freq": 98.5,
+  "call": "WSBH",
+  "city": "Satellite Beach",
+  "state": "FL",
+  "service": "FM",
+  "erp_kw": 25.0,
+  "km": 70.96
+ },
+ {
+  "freq": 98.9,
+  "call": "WMMO",
+  "city": "Orlando",
+  "state": "FL",
+  "service": "FM",
+  "erp_kw": 44.0,
+  "km": 25.87
+ },
+ {
+  "freq": 99.1,
+  "call": "WRWS-LP",
+  "city": "Daytona Beach",
+  "state": "FL",
+  "service": "FL",
+  "erp_kw": 0.1,
+  "km": 68.87
+ },
+ {
+  "freq": 99.3,
+  "call": "WLRQ-FM",
+  "city": "Cocoa",
+  "state": "FL",
+  "service": "FM",
+  "erp_kw": 50.0,
+  "km": 60.68
+ },
+ {
+  "freq": 99.3,
+  "call": "W257BF",
+  "city": "Leesburg",
+  "state": "FL",
+  "service": "FX",
+  "erp_kw": 0.055,
+  "km": 68.35
+ },
+ {
+  "freq": 99.5,
+  "call": "W258DD",
+  "city": "Orlando",
+  "state": "FL",
+  "service": "FX",
+  "erp_kw": 0.166,
+  "km": 18.85
+ },
+ {
+  "freq": 99.5,
+  "call": "WLOV-FM",
+  "city": "Daytona Beach Shores",
+  "state": "FL",
+  "service": "FM",
+  "erp_kw": 5.5,
+  "km": 71.37
+ },
+ {
+  "freq": 99.7,
+  "call": "WWRG-LP",
+  "city": "Lake Mary",
+  "state": "FL",
+  "service": "FL",
+  "erp_kw": 0.1,
+  "km": 19.64
+ },
+ {
+  "freq": 99.7,
+  "call": "WBVL-LP",
+  "city": "Kissimmee",
+  "state": "FL",
+  "service": "FL",
+  "erp_kw": 0.089,
+  "km": 37.0
+ },
+ {
+  "freq": 99.7,
+  "call": "WIDT-LP",
+  "city": "Winter Garden",
+  "state": "FL",
+  "service": "FL",
+  "erp_kw": 0.019,
+  "km": 39.52
+ },
+ {
+  "freq": 99.9,
+  "call": "W260CL",
+  "city": "Cocoa",
+  "state": "FL",
+  "service": "FX",
+  "erp_kw": 0.23,
+  "km": 20.93
+ },
+ {
+  "freq": 99.9,
+  "call": "WOGJ-LP",
+  "city": "Orlando",
+  "state": "FL",
+  "service": "FL",
+  "erp_kw": 0.048,
+  "km": 22.2
+ },
+ {
+  "freq": 99.9,
+  "call": "WPKA-LP",
+  "city": "Apopka",
+  "state": "FL",
+  "service": "FL",
+  "erp_kw": 0.067,
+  "km": 31.24
+ },
+ {
+  "freq": 99.9,
+  "call": "WJRQ-LP",
+  "city": "Poinciana",
+  "state": "FL",
+  "service": "FL",
+  "erp_kw": 0.014,
+  "km": 60.63
+ },
+ {
+  "freq": 100.3,
+  "call": "WRUM",
+  "city": "Orlando",
+  "state": "FL",
+  "service": "FM",
+  "erp_kw": 100.0,
+  "km": 12.42
+ },
+ {
+  "freq": 100.7,
+  "call": "WUOH-LP",
+  "city": "Orlando",
+  "state": "FL",
+  "service": "FL",
+  "erp_kw": 0.014,
+  "km": 4.85
+ },
+ {
+  "freq": 100.7,
+  "call": "W264DU",
+  "city": "Orlando",
+  "state": "FL",
+  "service": "FX",
+  "erp_kw": 0.25,
+  "km": 25.02
+ },
+ {
+  "freq": 100.7,
+  "call": "W264DV",
+  "city": "Kissimmee",
+  "state": "FL",
+  "service": "FX",
+  "erp_kw": 0.25,
+  "km": 31.84
+ },
+ {
+  "freq": 100.7,
+  "call": "W264AS",
+  "city": "Melbourne",
+  "state": "FL",
+  "service": "FX",
+  "erp_kw": 0.25,
+  "km": 70.93
+ },
+ {
+  "freq": 100.7,
+  "call": "W264DP",
+  "city": "Daytona Beach",
+  "state": "FL",
+  "service": "FX",
+  "erp_kw": 0.22,
+  "km": 71.36
+ },
+ {
+  "freq": 101.1,
+  "call": "WJRR",
+  "city": "Cocoa Beach",
+  "state": "FL",
+  "service": "FM",
+  "erp_kw": 100.0,
+  "km": 12.42
+ },
+ {
+  "freq": 101.5,
+  "call": "W268CT",
+  "city": "Orlando",
+  "state": "FL",
+  "service": "FX",
+  "erp_kw": 0.225,
+  "km": 21.31
+ },
+ {
+  "freq": 101.5,
+  "call": "W268DG",
+  "city": "Ormond Beach",
+  "state": "FL",
+  "service": "FX",
+  "erp_kw": 0.01,
+  "km": 68.87
+ },
+ {
+  "freq": 101.5,
+  "call": "W268CB",
+  "city": "Melbourne",
+  "state": "FL",
+  "service": "FX",
+  "erp_kw": 0.01,
+  "km": 70.93
+ },
+ {
+  "freq": 101.9,
+  "call": "WJHM",
+  "city": "Daytona Beach",
+  "state": "FL",
+  "service": "FM",
+  "erp_kw": 92.0,
+  "km": 37.02
+ },
+ {
+  "freq": 102.1,
+  "call": "W271CY",
+  "city": "Lakeland",
+  "state": "FL",
+  "service": "FX",
+  "erp_kw": 0.125,
+  "km": 95.38
+ },
+ {
+  "freq": 102.3,
+  "call": "WMQV-LP",
+  "city": "Kissimmee",
+  "state": "FL",
+  "service": "FL",
+  "erp_kw": 0.08,
+  "km": 33.39
+ },
+ {
+  "freq": 102.3,
+  "call": "W272DH",
+  "city": "New Smyrna Beach",
+  "state": "FL",
+  "service": "FX",
+  "erp_kw": 0.055,
+  "km": 50.18
+ },
+ {
+  "freq": 102.3,
+  "call": "W272BA",
+  "city": "Cocoa Beach",
+  "state": "FL",
+  "service": "FX",
+  "erp_kw": 0.097,
+  "km": 60.68
+ },
+ {
+  "freq": 102.5,
+  "call": "W273CA",
+  "city": "Orlando",
+  "state": "FL",
+  "service": "FX",
+  "erp_kw": 0.25,
+  "km": 21.31
+ },
+ {
+  "freq": 102.5,
+  "call": "WIKD-LP",
+  "city": "Daytona Beach",
+  "state": "FL",
+  "service": "FL",
+  "erp_kw": 0.094,
+  "km": 67.1
+ },
+ {
+  "freq": 102.7,
+  "call": "W274AY",
+  "city": "Deltona",
+  "state": "FL",
+  "service": "FX",
+  "erp_kw": 0.25,
+  "km": 33.12
+ },
+ {
+  "freq": 102.7,
+  "call": "WHKR",
+  "city": "Rockledge",
+  "state": "FL",
+  "service": "FM",
+  "erp_kw": 50.0,
+  "km": 50.19
+ },
+ {
+  "freq": 102.7,
+  "call": "WUMA-LP",
+  "city": "Umatilla",
+  "state": "FL",
+  "service": "FL",
+  "erp_kw": 0.08,
+  "km": 58.29
+ },
+ {
+  "freq": 102.7,
+  "call": "W274BB",
+  "city": "Haines City",
+  "state": "FL",
+  "service": "FX",
+  "erp_kw": 0.038,
+  "km": 71.5
+ },
+ {
+  "freq": 102.7,
+  "call": "W274BR",
+  "city": "The Villages",
+  "state": "FL",
+  "service": "FX",
+  "erp_kw": 0.25,
+  "km": 81.42
+ },
+ {
+  "freq": 102.7,
+  "call": "WXIO-LP",
+  "city": "Ridge Manor",
+  "state": "FL",
+  "service": "FL",
+  "erp_kw": 0.1,
+  "km": 96.28
+ },
+ {
+  "freq": 103.1,
+  "call": "WFYY",
+  "city": "Windermere",
+  "state": "FL",
+  "service": "FM",
+  "erp_kw": 22.0,
+  "km": 38.84
+ },
+ {
+  "freq": 103.3,
+  "call": "WZDF-LP",
+  "city": "Merritt Island",
+  "state": "FL",
+  "service": "FL",
+  "erp_kw": 0.1,
+  "km": 55.43
+ },
+ {
+  "freq": 103.3,
+  "call": "WVYB",
+  "city": "Holly Hill",
+  "state": "FL",
+  "service": "FM",
+  "erp_kw": 6.0,
+  "km": 71.37
+ },
+ {
+  "freq": 103.5,
+  "call": "W278CN",
+  "city": "Eatonville",
+  "state": "FL",
+  "service": "FX",
+  "erp_kw": 0.196,
+  "km": 18.64
+ },
+ {
+  "freq": 103.5,
+  "call": "W278CI",
+  "city": "Oxford",
+  "state": "FL",
+  "service": "FX",
+  "erp_kw": 0.25,
+  "km": 93.95
+ },
+ {
+  "freq": 103.7,
+  "call": "W279CT",
+  "city": "Kissimmee",
+  "state": "FL",
+  "service": "FX",
+  "erp_kw": 0.181,
+  "km": 31.84
+ },
+ {
+  "freq": 104.1,
+  "call": "WTKS-FM",
+  "city": "Cocoa Beach",
+  "state": "FL",
+  "service": "FM",
+  "erp_kw": 100.0,
+  "km": 12.42
+ },
+ {
+  "freq": 104.5,
+  "call": "W283AN",
+  "city": "Altamonte Springs",
+  "state": "FL",
+  "service": "FX",
+  "erp_kw": 0.221,
+  "km": 25.12
+ },
+ {
+  "freq": 104.5,
+  "call": "W283DJ",
+  "city": "Cocoa",
+  "state": "FL",
+  "service": "FX",
+  "erp_kw": 0.25,
+  "km": 50.94
+ },
+ {
+  "freq": 104.5,
+  "call": "W283DK",
+  "city": "Wildwood",
+  "state": "FL",
+  "service": "FX",
+  "erp_kw": 0.25,
+  "km": 76.83
+ },
+ {
+  "freq": 104.7,
+  "call": "W284DU",
+  "city": "Kissimmee",
+  "state": "FL",
+  "service": "FX",
+  "erp_kw": 0.25,
+  "km": 31.84
+ },
+ {
+  "freq": 105.1,
+  "call": "WOMX-FM",
+  "city": "Orlando",
+  "state": "FL",
+  "service": "FM",
+  "erp_kw": 100.0,
+  "km": 12.42
+ },
+ {
+  "freq": 105.5,
+  "call": "W288CJ",
+  "city": "Oviedo",
+  "state": "FL",
+  "service": "FX",
+  "erp_kw": 0.25,
+  "km": 18.64
+ },
+ {
+  "freq": 105.5,
+  "call": "WTMS-LP",
+  "city": "Kissimmee",
+  "state": "FL",
+  "service": "FL",
+  "erp_kw": 0.08,
+  "km": 33.39
+ },
+ {
+  "freq": 105.5,
+  "call": "W288DZ",
+  "city": "Titusville",
+  "state": "FL",
+  "service": "FX",
+  "erp_kw": 0.25,
+  "km": 60.68
+ },
+ {
+  "freq": 105.7,
+  "call": "WECA-LP",
+  "city": "Palm Bay",
+  "state": "FL",
+  "service": "FL",
+  "erp_kw": 0.1,
+  "km": 91.21
+ },
+ {
+  "freq": 105.9,
+  "call": "WOCL",
+  "city": "Deland",
+  "state": "FL",
+  "service": "FM",
+  "erp_kw": 100.0,
+  "km": 37.02
+ },
+ {
+  "freq": 106.3,
+  "call": "W292DZ",
+  "city": "Orlando",
+  "state": "FL",
+  "service": "FX",
+  "erp_kw": 0.215,
+  "km": 21.31
+ },
+ {
+  "freq": 106.3,
+  "call": "WAIG-LP",
+  "city": "Daytona Beach",
+  "state": "FL",
+  "service": "FL",
+  "erp_kw": 0.022,
+  "km": 68.15
+ },
+ {
+  "freq": 106.3,
+  "call": "WCIF",
+  "city": "Melbourne",
+  "state": "FL",
+  "service": "FM",
+  "erp_kw": 13.5,
+  "km": 70.9
+ },
+ {
+  "freq": 106.7,
+  "call": "WXXL",
+  "city": "Tavares",
+  "state": "FL",
+  "service": "FM",
+  "erp_kw": 100.0,
+  "km": 38.82
+ },
+ {
+  "freq": 106.9,
+  "call": "W295CN",
+  "city": "Ormond Beach",
+  "state": "FL",
+  "service": "FX",
+  "erp_kw": 0.25,
+  "km": 55.03
+ },
+ {
+  "freq": 107.1,
+  "call": "W296DO",
+  "city": "Eustis",
+  "state": "FL",
+  "service": "FX",
+  "erp_kw": 0.25,
+  "km": 55.09
+ },
+ {
+  "freq": 107.1,
+  "call": "WAOA-FM",
+  "city": "Melbourne",
+  "state": "FL",
+  "service": "FM",
+  "erp_kw": 100.0,
+  "km": 70.96
+ },
+ {
+  "freq": 107.1,
+  "call": "WAVX-LP",
+  "city": "Ormond Beach",
+  "state": "FL",
+  "service": "FL",
+  "erp_kw": 0.1,
+  "km": 73.73
+ },
+ {
+  "freq": 107.3,
+  "call": "W297BB",
+  "city": "Orlando",
+  "state": "FL",
+  "service": "FX",
+  "erp_kw": 0.25,
+  "km": 25.87
+ },
+ {
+  "freq": 107.5,
+  "call": "W298BO",
+  "city": "Winter Haven",
+  "state": "FL",
+  "service": "FX",
+  "erp_kw": 0.027,
+  "km": 85.99
+ },
+ {
+  "freq": 107.7,
+  "call": "WMGF",
+  "city": "Mount Dora",
+  "state": "FL",
+  "service": "FM",
+  "erp_kw": 100.0,
+  "km": 37.02
+ },
+ {
+  "freq": 107.9,
+  "call": "W300CY",
+  "city": "Lake Wales",
+  "state": "FL",
+  "service": "FX",
+  "erp_kw": 0.1,
+  "km": 76.47
+ }
+]

@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FM Band Scanner</title>
+<style>
+  :root {
+    --bg: #f6f5f1; --panel: #ffffff; --ink: #1d2126; --muted: #68707a; --line: #dedbd3;
+    --empty: #b9bcc0; --weak: #d98a1f; --strong: #0f7c72; --accent: #2456a6; --bad: #b3372e;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14171a; --panel: #1d2125; --ink: #e8e6e1; --muted: #9aa1a9; --line: #30363c;
+      --empty: #4a5057; --weak: #e6a23c; --strong: #35b3a5; --accent: #7fa8ea; --bad: #e0685e;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+         font: 15px/1.45 "Segoe UI", system-ui, sans-serif; }
+  main { max-width: 1180px; margin: 0 auto; padding: 20px 16px 60px; }
+  header { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 18px; margin-bottom: 14px; }
+  h1 { font-size: 20px; margin: 0; letter-spacing: 0.01em; }
+  h2 { font-size: 13px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted);
+       margin: 0 0 10px; font-weight: 600; }
+  .panel { background: var(--panel); border: 1px solid var(--line); border-radius: 8px;
+           padding: 14px 16px; margin-bottom: 14px; }
+  button { font: inherit; padding: 6px 14px; border-radius: 6px; border: 1px solid var(--line);
+           background: var(--panel); color: var(--ink); cursor: pointer; }
+  button:hover { border-color: var(--accent); }
+  button:disabled { opacity: 0.5; cursor: default; }
+  button.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+  button.on { outline: 2px solid var(--accent); }
+  #status { color: var(--muted); font-size: 14px; }
+  #error { color: var(--bad); font-weight: 600; }
+  label.check { color: var(--muted); font-size: 14px; display: flex; align-items: center; gap: 6px; }
+  svg { display: block; width: 100%; height: auto; }
+  .axis { fill: var(--muted); font-size: 11px; }
+  .mark { fill: var(--ink); font-size: 10px; font-variant-numeric: tabular-nums; }
+  .legend { display: flex; flex-wrap: wrap; gap: 6px 18px; color: var(--muted); font-size: 13px; margin-top: 8px; }
+  .dot { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 6px; }
+  .columns { display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: 14px; align-items: start; }
+  @media (max-width: 900px) { .columns { grid-template-columns: 1fr; } }
+  .scroll { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }
+  th { text-align: left; font-size: 12px; color: var(--muted); font-weight: 600; padding: 6px 8px;
+       border-bottom: 1px solid var(--line); white-space: nowrap; }
+  td { padding: 6px 8px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+  tbody tr { cursor: pointer; }
+  tbody tr:hover, tbody tr.picked { background: color-mix(in srgb, var(--accent) 10%, transparent); }
+  .bar { display: inline-block; height: 8px; border-radius: 2px; vertical-align: middle; margin-right: 8px; }
+  .tag { display: inline-block; padding: 1px 8px; border-radius: 10px; font-size: 12px; color: #fff; }
+  .tag.empty { background: var(--empty); color: var(--ink); }
+  .tag.weak { background: var(--weak); } .tag.strong { background: var(--strong); }
+  .small { color: var(--muted); font-size: 13px; }
+  .filters { display: flex; gap: 8px; margin-bottom: 10px; flex-wrap: wrap; }
+  canvas { width: 100%; image-rendering: pixelated; border: 1px solid var(--line); border-radius: 4px;
+           background: #000; }
+  audio { width: 100%; margin: 8px 0; }
+  .score { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 8px; }
+  .score b { font-size: 24px; display: block; }
+  .choices { display: flex; gap: 8px; margin-top: 8px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>FM Band Scanner</h1>
+    <button id="startStop" class="primary">Start sweep</button>
+    <label class="check"><input type="checkbox" id="save" checked> save sweeps for training</label>
+    <span id="status"></span>
+    <span id="error"></span>
+  </header>
+
+  <section class="panel">
+    <h2>The band, 87.9 to 107.9 MHz</h2>
+    <svg id="strip" viewBox="0 0 1030 230" role="img" aria-label="Signal strength on each FM channel"></svg>
+    <div class="legend">
+      <span><span class="dot" style="background:var(--strong)"></span>strong station</span>
+      <span><span class="dot" style="background:var(--weak)"></span>weak station</span>
+      <span><span class="dot" style="background:var(--empty)"></span>empty</span>
+      <span>Bar height = dB above the quiet channels nearby. Colour = what the model says. Click a bar for details.</span>
+    </div>
+  </section>
+
+  <div class="columns">
+    <section class="panel">
+      <h2>Channels</h2>
+      <div class="filters">
+        <button data-filter="stations" class="on">Stations only</button>
+        <button data-filter="all">All 101</button>
+        <button data-filter="review">Needs review</button>
+        <button data-filter="wrong">Model disagrees with label</button>
+      </div>
+      <div class="scroll">
+        <table>
+          <thead><tr><th>Frequency</th><th>Strength</th><th>Model says</th><th>Confidence</th>
+            <th>Station name</th><th>Label</th></tr></thead>
+          <tbody id="rows"></tbody>
+        </table>
+      </div>
+      <p class="small" id="tableNote"></p>
+    </section>
+
+    <div>
+      <section class="panel">
+        <h2>Selected channel</h2>
+        <div id="detail" class="small">Click a bar or a row.</div>
+      </section>
+      <section class="panel">
+        <h2>The model</h2>
+        <div id="model" class="small"></div>
+        <button id="retrain">Retrain on saved sweeps</button>
+      </section>
+    </div>
+  </div>
+</main>
+
+<script>
+const SVG = "http://www.w3.org/2000/svg";
+const LEFT = 10, CHANNEL_WIDTH = 10, BASE = 195, TOP = 30, MAX_DB = 30;
+let latest = null;
+let picked = null;
+let filter = "stations";
+
+function el(tag, text, cls) {
+  const node = document.createElement(tag);
+  if (text !== undefined && text !== null) node.textContent = text;
+  if (cls) node.className = cls;
+  return node;
+}
+
+function svgEl(tag, attrs) {
+  const node = document.createElementNS(SVG, tag);
+  for (const k in attrs) node.setAttribute(k, attrs[k]);
+  return node;
+}
+
+function colour(said) {
+  return said === "strong" ? "var(--strong)" : said === "weak" ? "var(--weak)" : "var(--empty)";
+}
+
+async function post(path, body) {
+  await fetch(path, { method: "POST", headers: { "Content-Type": "application/json" },
+                      body: JSON.stringify(body || {}) });
+  refresh();
+}
+
+function drawStrip(s) {
+  const strip = document.getElementById("strip");
+  strip.replaceChildren();
+  // faint guide lines every 10 dB
+  for (const db of [10, 20, 30]) {
+    const y = BASE - (db / MAX_DB) * (BASE - TOP);
+    strip.append(svgEl("line", { x1: LEFT, x2: LEFT + 101 * CHANNEL_WIDTH, y1: y, y2: y,
+                                 stroke: "var(--line)", "stroke-width": 1 }));
+    const t = svgEl("text", { x: LEFT + 101 * CHANNEL_WIDTH + 4, y: y + 4, class: "axis" });
+    t.textContent = db + " dB";
+    strip.append(t);
+  }
+  s.channels.forEach((c, i) => {
+    const x = LEFT + i * CHANNEL_WIDTH;
+    const db = Math.max(0, Math.min(MAX_DB, c.strength === null ? 0 : c.strength));
+    const h = Math.max(2, (db / MAX_DB) * (BASE - TOP));
+    const group = svgEl("g", { style: "cursor:pointer" });
+    const title = svgEl("title", {});
+    title.textContent = c.freq + " MHz" + (c.name ? "  " + c.name : "");
+    group.append(title);
+    // an invisible full-height rectangle so thin bars are still easy to click
+    group.append(svgEl("rect", { x: x, y: TOP - 20, width: CHANNEL_WIDTH, height: BASE - TOP + 20, fill: "transparent" }));
+    group.append(svgEl("rect", { x: x + 1, y: BASE - h, width: CHANNEL_WIDTH - 2, height: h,
+                                 rx: 1.5, fill: colour(c.said),
+                                 opacity: c.strength === null ? 0.3 : 1 }));
+    if (s.current === i) {
+      group.append(svgEl("rect", { x: x, y: TOP - 20, width: CHANNEL_WIDTH, height: BASE - TOP + 20,
+                                   fill: "var(--accent)", opacity: 0.18 }));
+    }
+    if (picked === c.freq) {
+      group.append(svgEl("rect", { x: x, y: BASE + 2, width: CHANNEL_WIDTH, height: 3, fill: "var(--accent)" }));
+    }
+    if (c.said === "strong" || c.said === "weak") {
+      // the station marker: a small triangle and the frequency above the bar
+      const mx = x + CHANNEL_WIDTH / 2, my = BASE - h - 4;
+      group.append(svgEl("path", { d: `M${mx - 3.5} ${my - 6} L${mx + 3.5} ${my - 6} L${mx} ${my} Z`, fill: colour(c.said) }));
+      const t = svgEl("text", { x: mx, y: my - 9, class: "mark", transform: `rotate(-60 ${mx} ${my - 9})` });
+      t.textContent = c.freq;
+      group.append(t);
+    }
+    group.addEventListener("click", () => pick(c.freq));
+    strip.append(group);
+  });
+  // frequency axis, a tick every 2 MHz
+  for (let mhz = 88; mhz <= 108; mhz += 2) {
+    const x = LEFT + ((mhz - 87.9) / 0.2) * CHANNEL_WIDTH + CHANNEL_WIDTH / 2;
+    strip.append(svgEl("line", { x1: x, x2: x, y1: BASE + 6, y2: BASE + 11, stroke: "var(--muted)" }));
+    const t = svgEl("text", { x: x, y: BASE + 24, class: "axis", "text-anchor": "middle" });
+    t.textContent = mhz;
+    strip.append(t);
+  }
+}
+
+function wanted(c) {
+  if (filter === "all") return true;
+  if (filter === "review") return c.needs_review;
+  if (filter === "wrong") return c.label && c.said && c.label !== c.said;
+  return c.said === "weak" || c.said === "strong";
+}
+
+function drawTable(s) {
+  const rows = document.getElementById("rows");
+  rows.replaceChildren();
+  let shown = 0;
+  for (const c of s.channels) {
+    if (!wanted(c)) continue;
+    shown++;
+    const tr = el("tr");
+    if (picked === c.freq) tr.className = "picked";
+    tr.append(el("td", c.freq + " MHz"));
+
+    const strength = el("td");
+    if (c.strength !== null) {
+      const bar = el("span", "", "bar");
+      bar.style.width = Math.max(2, Math.min(30, c.strength) * 3) + "px";
+      bar.style.background = colour(c.said);
+      strength.append(bar, document.createTextNode(c.strength.toFixed(1) + " dB"));
+    } else strength.textContent = "not measured";
+    tr.append(strength);
+
+    const said = el("td");
+    if (c.said) said.append(el("span", c.said, "tag " + c.said));
+    else said.textContent = "no model yet";
+    tr.append(said);
+
+    tr.append(el("td", c.confidence === null ? "" : Math.round(c.confidence * 100) + "%"));
+
+    const name = el("td");
+    if (c.name && (c.said !== "empty" || filter !== "stations")) {
+      name.append(document.createTextNode(c.name));
+      if (c.name_source === "list") name.append(el("span", "  listed, not heard", "small"));
+    }
+    tr.append(name);
+
+    const label = el("td");
+    if (c.label) {
+      label.append(el("span", c.label, "tag " + c.label));
+      label.append(el("span", c.needs_review ? "  review" : c.label_source === "you" ? "  you" : "", "small"));
+    }
+    tr.append(label);
+    tr.addEventListener("click", () => pick(c.freq));
+    rows.append(tr);
+  }
+  const note = document.getElementById("tableNote");
+  note.textContent = shown === 0
+    ? (filter === "stations" && !s.has_model ? "No model trained yet, so nothing is marked as a station. Use All 101."
+       : "Nothing to show under this filter.")
+    : shown + " of 101 channels. Strength is dB above the quiet channels within 2 MHz.";
+}
+
+function drawModel(s) {
+  const box = document.getElementById("model");
+  box.replaceChildren();
+  const r = s.report;
+  if (!r) {
+    box.append(el("p", "No model trained yet. Record some sweeps, then press Retrain."));
+    return;
+  }
+  const score = el("div", "", "score");
+  const a = el("div"); a.append(el("b", Math.round(r.net.balanced_accuracy * 100) + "%"), document.createTextNode("neural net"));
+  const b = el("div"); b.append(el("b", Math.round(r.rule.balanced_accuracy * 100) + "%"), document.createTextNode("plain strength rule"));
+  score.append(a, b);
+  box.append(score);
+  box.append(el("p", "Score on channels the model never trained on (average of how many empty, weak and strong it got right)."));
+  const n = r.channels_per_class;
+  box.append(el("p", `Trained on ${r.pictures} pictures from ${r.sweeps} sweeps: ${n.strong} strong, ${n.weak} weak, ${n.empty} empty channels.`));
+  if (r.flagged_for_review.length)
+    box.append(el("p", "Worth a listen (label may be wrong): " + r.flagged_for_review.join(", ")));
+  if (r.missed_channels.length)
+    box.append(el("p", "Usually gets wrong: " + r.missed_channels.map(m => `${m.freq} (is ${m.truth}, says ${m.said})`).join("; ")));
+  box.append(el("p", "The confidence shown in the table is on channels the final model has seen, so it reads higher than this score."));
+}
+
+async function drawDetail(s) {
+  const box = document.getElementById("detail");
+  const c = s.channels.find(x => x.freq === picked);
+  if (!c) return;
+  if (box.dataset.freq !== picked) {
+    // rebuild only when the selection changes, so the audio player isn't reset every poll
+    box.dataset.freq = picked;
+    box.replaceChildren();
+    box.append(el("p", c.freq + " MHz", ""), el("div", "", "facts"));
+    box.firstChild.style.cssText = "font-size:18px;color:var(--ink);margin:0 0 6px;font-weight:600";
+    const canvas = document.createElement("canvas");
+    canvas.width = 128; canvas.height = 16; canvas.style.height = "90px";
+    box.append(el("p", "What the model sees: frequency left to right, time top to bottom, brighter = further above this channel's own quiet level."), canvas);
+    if (c.has_audio) {
+      const audio = document.createElement("audio");
+      audio.controls = true; audio.src = "/audio/" + c.freq + ".wav";
+      box.append(el("p", "5 seconds recorded during the listening pass:"), audio);
+    }
+    box.append(el("p", "Your call on this channel:"));
+    const choices = el("div", "", "choices");
+    for (const name of s.classes) {
+      const b = el("button", name);
+      b.addEventListener("click", () => post("/api/label", { freq: c.freq, label: name }));
+      choices.append(b);
+    }
+    box.append(choices);
+  }
+  const facts = box.querySelector(".facts");
+  facts.replaceChildren();
+  const lines = [
+    c.name ? "Name: " + c.name + (c.name_source === "list" ? " (from the FCC list, not heard)" : "") : "Name: none",
+    c.strength === null ? "Strength: not measured" : "Strength: " + c.strength.toFixed(1) + " dB above the nearby floor",
+    c.probs ? "Model: " + s.classes.map((n, i) => n + " " + Math.round(c.probs[i] * 100) + "%").join(", ") : "Model: not trained yet",
+    "Evidence: " + (c.decoded ? "station text decoded" : c.pilot ? "pilot tone only" : "no pilot, no text"),
+    c.label ? "Label: " + c.label + " (" + (c.label_source === "you" ? "you decided" : c.why) + ")" : "Label: none yet",
+  ];
+  for (const line of lines) facts.append(el("p", line));
+  box.querySelectorAll(".choices button").forEach(b => b.classList.toggle("on", b.textContent === c.label && c.label_source === "you"));
+
+  const res = await fetch("/api/picture?freq=" + encodeURIComponent(picked));
+  const data = await res.json();
+  const canvas = box.querySelector("canvas");
+  if (!data.picture || !canvas) return;
+  const ctx = canvas.getContext("2d");
+  const image = ctx.createImageData(128, 16);
+  data.picture.forEach((row, y) => row.forEach((v, x) => {
+    const k = (y * 128 + x) * 4;
+    image.data[k] = 255 * Math.min(1, v * 1.6);
+    image.data[k + 1] = 255 * Math.min(1, v * 1.2);
+    image.data[k + 2] = 80 + 100 * v;
+    image.data[k + 3] = 255;
+  }));
+  ctx.putImageData(image, 0, 0);
+}
+
+function pick(freq) {
+  picked = freq;
+  if (latest) draw(latest);
+}
+
+function draw(s) {
+  latest = s;
+  const button = document.getElementById("startStop");
+  button.textContent = s.running ? "Stop sweep" : "Start sweep";
+  button.classList.toggle("primary", !s.running);
+  let status = s.running
+    ? "Sweeping, on " + (s.current === null ? "..." : s.channels[s.current].freq + " MHz") + ", " + s.sweeps_done + " full sweeps this run"
+    : "Stopped. Showing: " + (s.showing === "live" ? "the last live sweep" : s.showing);
+  status += ". " + s.saved_sweeps + " sweeps saved.";
+  if (s.busy) status += " " + s.busy;
+  document.getElementById("status").textContent = status;
+  document.getElementById("error").textContent = s.error;
+  document.getElementById("retrain").disabled = !!s.busy;
+  drawStrip(s);
+  drawTable(s);
+  drawModel(s);
+  drawDetail(s);
+}
+
+async function refresh() {
+  try {
+    const res = await fetch("/api/state");
+    draw(await res.json());
+  } catch (problem) {
+    document.getElementById("error").textContent = "Lost contact with server.py. Is it still running?";
+  }
+}
+
+document.getElementById("startStop").addEventListener("click", () => {
+  if (latest && latest.running) post("/api/stop");
+  else post("/api/start", { save: document.getElementById("save").checked });
+});
+document.getElementById("retrain").addEventListener("click", () => post("/api/retrain"));
+document.querySelectorAll("[data-filter]").forEach(b => b.addEventListener("click", () => {
+  filter = b.dataset.filter;
+  document.querySelectorAll("[data-filter]").forEach(x => x.classList.toggle("on", x === b));
+  if (latest) draw(latest);
+}));
+
+refresh();
+setInterval(refresh, 800);
+</script>
+</body>
+</html>

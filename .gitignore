@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+data/*
+!data/model.pt
+!data/report.json
+!data/labels.json
+!data/fcc.json
